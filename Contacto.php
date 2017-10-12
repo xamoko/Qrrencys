@@ -130,11 +130,11 @@
 <?php   
 if (isset ($_POST['Nom'])) {
   
-    $para      = 'qrrencys@gmail.com';
+    $para      = 'Aqui va tu mail';
             $titulo = 'Info sobre el servicio.';
             $mensaje = $_POST['Nom'].' a enviado el siguiente mensaje: '."\n"."\n".'Nombre:'."\n".$_POST['Nom']."\n"."\n".'Teléfono:'."\n".$_POST['Cel']."\n"."\n".'Correo:'."\n".$_POST['mail']."\n"."\n".'Mensaje:'."\n".$_POST['msg'];
-            $cabeceras = 'From: info@Qrrencys.com' . "\r\n" .
-              'Reply-To: XaviMorales@Qrrencys.com' . "\r\n" .
+            $cabeceras = 'From: Aqui va tu mail' . "\r\n" .
+              'Reply-To: Aqui va tu mail' . "\r\n" .
               'X-Mailer: PHP/' . phpversion();
     
     mail($para, $titulo, $mensaje, $cabeceras);
